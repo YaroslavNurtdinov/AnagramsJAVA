@@ -7,50 +7,37 @@
     tools:context=".MainActivity">
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/edit_text_main_input"
         android:layout_width="350dp"
         android:layout_height="50dp"
+        android:autofillHints=""
         android:ems="10"
-        android:hint="Введите строку"
+        android:hint="@string/input_string"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="39dp"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName2"
+        android:id="@+id/edit_text_ignore_input"
         android:layout_width="350dp"
         android:layout_height="50dp"
+        android:autofillHints=""
         android:ems="10"
-        android:hint="Введите игнорируемые символы"
+        android:hint="@string/inpute_ignore_chars"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:onClick="onClickStart"
-        android:text="Изменить"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
+        app:layout_constraintTop_toBottomOf="@+id/edit_text_main_input" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/text_view_main"
         android:layout_width="350dp"
         android:layout_height="50dp"
-        android:layout_marginTop="100dp"
-        android:text="Result:"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="@string/Result"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.508"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button"
-        app:layout_constraintVertical_bias="0.0"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintTop_toBottomOf="@+id/edit_text_ignore_input" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

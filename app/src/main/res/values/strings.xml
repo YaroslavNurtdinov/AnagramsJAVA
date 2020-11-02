@@ -1,3 +1,8 @@
 <resources>
-    <string name="app_name">FirstLesson</string>
+
+    <string name="app_name" />
+    <string name="Result">Result</string>
+    <string name="inpute_ignore_chars">inpute ignore chars</string>
+    <string name="input_string">Input string</string>
+    <string name="button">button</string>
 </resources>

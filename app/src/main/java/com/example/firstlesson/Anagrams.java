@@ -1,9 +1,9 @@
 package com.example.firstlesson;
 
-public class First_Lesson {
-    public static String rotate(String sourceString, String ignoredCharsString) {
-        String[] sourceWords = sourceString.split(" ");
-        char[] ignoredChars = ignoredCharsString.toCharArray();
+public class Anagrams {
+    public static String rotate(String edit_text_input_String, String edit_text_ignore_String) {
+        String[] sourceWords = edit_text_input_String.split(" ");
+        char[] ignoredChars = edit_text_ignore_String.toCharArray();
         char[][] words = new char[sourceWords.length][];
         for (int i = 0; i < sourceWords.length; i++) {
             words[i] = sourceWords[i].toCharArray();
